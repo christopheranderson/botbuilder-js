@@ -20,22 +20,6 @@
   },
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
-  "dependencies": {
-    "applicationinsights": "1.2.0",
-    "botbuilder-core": "4.1.6",
-    "cls-hooked": "^4.2.2"
-  },
-  "devDependencies": {
-    "@types/mocha": "^2.2.47",
-    "assert": "^1.4.1",
-    "chatdown": "^1.0.2",
-    "codelyzer": "^4.1.0",
-    "mocha": "^5.2.0",
-    "nyc": "^11.4.1",
-    "source-map-support": "^0.5.3",
-    "ts-node": "^4.1.0",
-    "typescript": "3.5.3"
-  },
   "scripts": {
     "test": "tsc && nyc mocha tests/",
     "build": "tsc",
@@ -46,5 +30,37 @@
   "files": [
     "/lib",
     "/src"
-  ]
+  ],
+  "dependencies": {
+    "applicationinsights": "1.2.0",
+    "botbuilder-core": "4.1.6",
+    "cls-hooked": "^4.2.2"
+  },
+  "devDependencies": {
+    "@azure/ms-rest-js": "^1.8.13",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/lodash": "^4.14.134",
+    "@types/mocha": "^2.2.47",
+    "@types/node": "~12.12.3",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "assert": "^1.4.1",
+    "chatdown": "^1.0.2",
+    "codelyzer": "^4.1.0",
+    "coveralls": "^3.0.4",
+    "eslint": "^5.16.0",
+    "eslint-plugin-only-warn": "^1.0.1",
+    "mocha": "^5.2.0",
+    "ms-rest-azure": "^2.6.0",
+    "nyc": "^11.4.1",
+    "read-text-file": "^1.1.0",
+    "replace-in-file": "^4.1.0",
+    "sinon": "^7.3.2",
+    "source-map-support": "^0.5.3",
+    "ts-node": "^4.1.0",
+    "typedoc": "^0.15.0",
+    "typedoc-plugin-external-module-name": "^2.1.0",
+    "typedoc-plugin-markdown": "^2.2.10",
+    "typescript": "3.5.2"
+  }
 }

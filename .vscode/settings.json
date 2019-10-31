@@ -1,0 +1,4 @@
+{
+    "eslint.packageManager": "pnpm",
+    "typescript.tsdk": "./libraries/botbuilder/node_modules/typescript/lib"
+}

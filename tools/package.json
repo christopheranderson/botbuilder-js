@@ -1,5 +1,6 @@
 {
-  "name": "azure",
+  "name": "tools",
+  "private": true,
   "author": "Microsoft Corporation",
   "contributors": [
     "Block, Glenn <gblock@microsoft.com>",
@@ -36,7 +37,8 @@
     "ms-rest-azure": "^2.5.7",
     "request": "^2.88.0",
     "underscore": "1.8.3",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "botbuilder-core":"*"
   },
   "devDependencies": {
     "adal-node": "^0.1.28",
@@ -47,7 +49,6 @@
     "gulp": "^3.9.0",
     "gulp-exec": "2.1.2",
     "jshint": "^2.9.6",
-    "minami": "github:devigned/minami#master",
     "mocha": "^5.2.0",
     "nock": "^10.0.3",
     "node-forge": "0.6.30",
@@ -68,7 +69,8 @@
     "url": "http://github.com/Azure/azure-sdk-for-node/issues"
   },
   "scripts": {
-    "test": "npm -s run runtime-install && npm -s run jshint && npm -s run unit-msrestazure && npm -s run unit-arm && npm -s run unit && npm -s run unit-msrest",
+    "test":"",
+    "old-test": "npm -s run runtime-install && npm -s run jshint && npm -s run unit-msrestazure && npm -s run unit-arm && npm -s run unit && npm -s run unit-msrest",
     "unit": "node scripts/unit.js testlist.txt",
     "unit-arm": "node scripts/unit-arm.js testlistarm.txt",
     "unit-msrest": "cd runtime/ms-rest && npm test",
@@ -78,6 +80,7 @@
     "ci": "node scripts/unit.js testlist.txt",
     "runtime-install": "node scripts/runtime-install.js",
     "coverage": "node scripts/unit-coverage.js testlistarm.txt testlist.txt",
-    "debug": "node --inspect scripts/unit-arm.js testlistarm.txt"
+    "debug": "node --inspect scripts/unit-arm.js testlistarm.txt",
+    "build":""
   }
 }

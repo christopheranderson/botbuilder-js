@@ -24,20 +24,37 @@
     "type": "git",
     "url": "git@github.com:Microsoft/botbuilder-js.git"
   },
-  "devDependencies": {
-    "@types/uuid": "^3.4.3",
-    "mocha": "^5.2.0",
-    "typescript": "3.5.3"
+  "scripts": {
+    "test": "tsc && nyc mocha tests/",
+    "build": "tsc",
+    "clean": "erase /q /s .\\lib",
+    "set-version": "npm version --allow-same-version ${Version}"
   },
   "dependencies": {
     "fs-extra": "^7.0.0",
     "read-text-file": "^1.1.0",
     "uuid": "^3.3.2"
   },
-  "scripts": {
-    "test": "tsc && nyc mocha tests/",
-    "build": "tsc",
-    "clean": "erase /q /s .\\lib",
-    "set-version": "npm version --allow-same-version ${Version}"
+  "devDependencies": {
+    "@azure/ms-rest-js": "^1.8.13",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/lodash": "^4.14.134",
+    "@types/node": "~12.12.3",
+    "@types/uuid": "^3.4.3",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "coveralls": "^3.0.4",
+    "eslint": "^5.16.0",
+    "eslint-plugin-only-warn": "^1.0.1",
+    "mocha": "^6.1.4",
+    "ms-rest-azure": "^2.6.0",
+    "nyc": "~14.1.1",
+    "read-text-file": "^1.1.0",
+    "replace-in-file": "^4.1.0",
+    "sinon": "^7.3.2",
+    "typedoc": "^0.15.0",
+    "typedoc-plugin-external-module-name": "^2.1.0",
+    "typedoc-plugin-markdown": "^2.2.10",
+    "typescript": "3.5.2"
   }
 }
